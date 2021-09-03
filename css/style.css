@@ -1,0 +1,222 @@
+/*Форматирование сайта*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1500px;
+    width: 100%;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+li::before {
+    display: none;
+}
+
+
+/*Шапка сайта*/
+.header__block {
+    padding: 22px 144px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #333333;
+}
+
+.header__logo span {
+    margin-left: 13px;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.header__mowing-kinds {
+    margin-left: 0px;
+}
+
+.header__mowing-kinds a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #219653;
+}
+
+.header__mowing-kinds span {
+    margin-left: 20px;
+}
+
+.header__call-order {
+    margin-left: 394px;
+
+    color: #219653;
+}
+
+.header__phone a {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+    color: #333333;
+}
+
+.header__phone span {
+    margin-left: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+
+/*Основное содержимое сайта*/
+
+/*О компании*/
+.about-us__block {
+    display: flex;
+    flex-direction: column;
+    
+    padding: 58px 150px;
+}
+.about-us__title::before, .clients__title::before, .values__title::before, .trust__title::before, .examples__title::before {
+    content: '.';
+    height: 34px;
+    width: 1px;
+
+    margin-right: 16px;
+    background-color: #219653;
+    color: #219653;
+}
+
+.about-us__description {
+    margin-top: 45px;
+}
+
+/*Наши клиенты*/
+.clients__block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 42px 150px;
+    padding-bottom: 139px;
+}
+
+.clients__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-top: 45px;
+}
+
+.client__info p {
+    font-weight: bold;
+}
+
+/*Ценности компании*/
+.values__block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 100px 146px;
+
+    background: rgba(33, 150, 83, 0.03);
+}
+
+.values__info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-top: 45px;
+}
+
+.values__description {
+    margin-right: 69px;
+}
+
+/*Почему клиенты доверяют нам*/
+.trust__block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 118px 146px;
+}
+
+/*Примеры наших работ*/
+.examples__block {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 146px;
+}
+
+.examples__list {
+    margin: 44px 0;
+}
+
+.examples__list-row img {
+    max-width: 288px;
+    height: 216px;
+}
+
+.examples__all-works {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.examples__all-works a {
+    color: #000;
+}
+
+
+/*Подвал сайта*/
+.footer__block {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #26292B;
+    color: #FBFBFB;
+
+    padding: 50px 150px;
+}
+
+.footer__block a {
+    color: #FBFBFB;
+    text-decoration: none;
+}
+
+.footer__nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    
+}
